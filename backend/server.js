@@ -23,7 +23,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: process.env.CLIENT_URL, // frontend URL
+  origin: ["https://employee-leave-management-system-cp.vercel.app"],
   credentials: true
 }));
 app.use(cookieParser());
