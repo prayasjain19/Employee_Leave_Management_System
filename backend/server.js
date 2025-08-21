@@ -23,7 +23,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: process.env.CLIENT_URL, // frontend URL
+  "*", // frontend URL
   credentials: true
 }));
 app.use(cookieParser());
