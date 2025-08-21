@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import apiClient from '../common/apiClient';
-import { AuthContext } from './AuthContext';
+import { AuthContext } from './authContext';
 
 const Login = () => {
   const { login } = useContext(AuthContext);
