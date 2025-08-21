@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Basic page background + default font */
+:root {
+  --brand: #0ea5a4; /* teal-500 */
+  --accent: #06b6d4; /* cyan-500 */
+}
+
+body {
+  @apply bg-gray-50 text-gray-800;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Card tiny shadow */
+.card {
+  @apply bg-white rounded-2xl shadow-md border border-gray-100;
+}
+
+/* Simple toast placement */
+.toaster {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 60;
+}
+
+/* Calendar tweaks */
+.calendar-day {
+  @apply h-24 p-2 border rounded-lg bg-white overflow-hidden;
+}
+.calendar-day.has-event {
+  @apply bg-gradient-to-br from-indigo-50 to-white border-indigo-100;
+}
+.event-pill {
+  @apply text-xs rounded px-2 py-0.5 inline-block truncate;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium;
+}
+.btn-primary { @apply bg-teal-500 text-white hover:bg-teal-600; }
+.btn-ghost   { @apply bg-transparent border border-gray-200 text-gray-700 hover:bg-gray-50; }
+
+/* Spinner (small) */
+.spinner {
+  @apply animate-spin rounded-full border-2 border-t-2 border-gray-200 border-t-teal-500 w-5 h-5;
+}
+
+/* Responsive utilities already provided by Tailwind */
