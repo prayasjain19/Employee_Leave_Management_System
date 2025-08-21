@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AuthContext } from '../auth/AuthContext';
+import { AuthContext } from '../auth/authContext';
 import apiClient from './apiClient';
 
 const Header = ({ onToggleSidebar }) => {

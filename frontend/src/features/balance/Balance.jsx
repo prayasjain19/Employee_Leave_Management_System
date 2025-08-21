@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { fetchMyBalance } from './balanceApi';
-import { AuthContext } from '../auth/AuthContext';
+import { AuthContext } from '../auth/authContext';
 
 const Balance = () => {
   const { user } = useContext(AuthContext);

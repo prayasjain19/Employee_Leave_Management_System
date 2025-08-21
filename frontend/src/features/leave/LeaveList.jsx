@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { fetchMyLeaves, fetchPendingLeaves, decideLeave } from './leaveApi';
-import { AuthContext } from '../auth/AuthContext';
+import { AuthContext } from '../auth/authContext';
 import toast from 'react-hot-toast';
 
 const LeaveCard = ({ l, onDecision, isManager }) => (

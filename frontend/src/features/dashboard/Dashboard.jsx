@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { fetchStats } from './dashboardApi';
-import { AuthContext } from '../auth/AuthContext';
+import { AuthContext } from '../auth/authContext';
 import apiClient from '../common/apiClient';
 
 const StatCard = ({ title, value }) => (
