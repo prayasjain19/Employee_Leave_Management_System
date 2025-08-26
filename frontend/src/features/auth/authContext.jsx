@@ -21,6 +21,7 @@ const parseJwt = (token) => {
   }
 };
 
+//Auth Provider
 export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
