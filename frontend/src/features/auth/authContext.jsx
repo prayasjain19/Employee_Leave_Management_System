@@ -43,6 +43,8 @@ export const AuthProvider = ({ children }) => {
     setLoading(false);
   }, []);
 
+
+  //login here
   const login = (token) => {
     localStorage.setItem('token', token);
     const decoded = parseJwt(token);
