@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 
 export const AuthContext = createContext();
 
+
+//PArsing Token
 const parseJwt = (token) => {
   try {
     const base64Url = token.split('.')[1]; // payload part
