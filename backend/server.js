@@ -17,10 +17,10 @@ const balanceRoutes = require('./routes/balanceRoutes');
 // Config
 dotenv.config();
 
-// App initialization
+// App initialization here
 const app = express();
 
-// Middleware
+// Middleware Imp
 app.use(express.json());
 app.use(cors({
   origin: ["https://employee-leave-management-seven.vercel.app"],
@@ -30,7 +30,7 @@ app.use(cookieParser());
 app.use(helmet());
 app.use(morgan('dev'));
 
-// API Routes
+// API Routes 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/leaves', leaveRoutes);
@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
   res.send('Employee Leave Management API is running...');
 });
 
-// Server + DB startup
+// Server + DB start
 const PORT = process.env.PORT || 4000;
 
 const startServer = async () => {
@@ -61,4 +61,6 @@ const startServer = async () => {
   }
 };
 
+
+//Calling here
 startServer();
